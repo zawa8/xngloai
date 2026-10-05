@@ -1,29 +1,198 @@
 {
   "language": "xnglo",
   "code": "xh26",
-  "version": "3.1",
+  "version": "4.0",
   "description": "xngloai — xnglo (xh26) a-z (26 letters) based hindi language dictionary",
   "words": {
-    "xnglo":     { "type": "noun", "meaning": "xnglo language", "hindi": "क्संग्लो" },
-    "xngloai":   { "type": "noun", "meaning": "xnglo artificial intelligence", "hindi": "क्संग्लो आर्टिफिशियल इंटेलिजेंस" },
-    "xh26":      { "type": "noun", "meaning": "xnglo language code (26 letters)", "hindi": "क्संग्लो भाषा कोड (26 अक्षर)" },
-    "xndroid":   { "type": "noun", "meaning": "android", "hindi": "एंड्रॉइड" },
-    "diksneri":  { "type": "noun", "meaning": "dictionary", "hindi": "शब्दकोश" },
-    "bhasa":     { "type": "noun", "meaning": "language", "hindi": "भाषा" },
-    "xkhr":      { "type": "noun", "meaning": "character / letter", "hindi": "अक्षर" },
-    "wyakrn":    { "type": "noun", "meaning": "grammar", "hindi": "व्याकरण" },
-    "prozekt":   { "type": "noun", "meaning": "project", "hindi": "परियोजना" },
-    "shbdx":     { "type": "noun", "meaning": "word", "hindi": "शब्द" },
-    "vakya":     { "type": "noun", "meaning": "sentence", "hindi": "वाक्य" },
-    "lyvwpf":    { "type": "noun", "meaning": "hex digits 10-15", "hindi": "हेक्स अंक 10-15" },
-    "heks":      { "type": "noun", "meaning": "hex / hexadecimal", "hindi": "हेक्साडेसिमल" },
-    "dizit":     { "type": "noun", "meaning": "digit", "hindi": "अंक" },
-    "siks":      { "type": "adj",  "meaning": "six", "hindi": "छह" },
-    "only":      { "type": "adj",  "meaning": "only", "hindi": "केवल" },
-    "xaji":      { "type": "verb", "meaning": "needed", "hindi": "चाहिए" },
-    "bxnana":    { "type": "verb", "meaning": "to make", "hindi": "बनाना" },
-    "sikxna":    { "type": "verb", "meaning": "to learn", "hindi": "सीखना" },
-    "bolna":     { "type": "verb", "meaning": "to speak", "hindi": "बोलना" },
-    "likhna":    { "type": "verb", "meaning": "to write", "hindi": "लिखना" }
-  }
+    "xnglo": {
+      "type": "noun",
+      "meaning": "xnglo language",
+      "hindi": "क्संग्लो"
+    },
+    "xngloai": {
+      "type": "noun",
+      "meaning": "xnglo artificial intelligence",
+      "hindi": "क्संग्लो आर्टिफिशियल इंटेलिजेंस"
+    },
+    "xh26": {
+      "type": "noun",
+      "meaning": "xnglo language code (26 letters)",
+      "hindi": "क्संग्लो भाषा कोड (26 अक्षर)"
+    },
+    "xndroid": {
+      "type": "noun",
+      "meaning": "android",
+      "hindi": "एंड्रॉइड"
+    },
+    "diksneri": {
+      "type": "noun",
+      "meaning": "dictionary",
+      "hindi": "शब्दकोश"
+    },
+    "bhasa": {
+      "type": "noun",
+      "meaning": "language",
+      "hindi": "भाषा"
+    },
+    "xkhr": {
+      "type": "noun",
+      "meaning": "character / letter",
+      "hindi": "अक्षर"
+    },
+    "wyakrn": {
+      "type": "noun",
+      "meaning": "grammar",
+      "hindi": "व्याकरण"
+    },
+    "prozekt": {
+      "type": "noun",
+      "meaning": "project",
+      "hindi": "परियोजना"
+    },
+    "shbdx": {
+      "type": "noun",
+      "meaning": "word",
+      "hindi": "शब्द"
+    },
+    "vakya": {
+      "type": "noun",
+      "meaning": "sentence",
+      "hindi": "वाक्य"
+    },
+    "lyvwpf": {
+      "type": "noun",
+      "meaning": "hex digits 10-15",
+      "hindi": "हेक्स अंक 10-15"
+    },
+    "heks": {
+      "type": "noun",
+      "meaning": "hex / hexadecimal",
+      "hindi": "हेक्साडेसिमल"
+    },
+    "dizit": {
+      "type": "noun",
+      "meaning": "digit",
+      "hindi": "अंक"
+    },
+    "siks": {
+      "type": "adj",
+      "meaning": "six",
+      "hindi": "छह"
+    },
+    "only": {
+      "type": "adj",
+      "meaning": "only",
+      "hindi": "केवल"
+    },
+    "xaji": {
+      "type": "verb",
+      "meaning": "needed",
+      "hindi": "चाहिए"
+    },
+    "bxnana": {
+      "type": "verb",
+      "meaning": "to make",
+      "hindi": "बनाना"
+    },
+    "sikxna": {
+      "type": "verb",
+      "meaning": "to learn",
+      "hindi": "सीखना"
+    },
+    "bolna": {
+      "type": "verb",
+      "meaning": "to speak",
+      "hindi": "बोलना"
+    },
+    "likhna": {
+      "type": "verb",
+      "meaning": "to write",
+      "hindi": "लिखना"
+    },
+    "jrbuz": {
+      "type": "noun",
+      "meaning": "watermelon",
+      "hindi": "तरबूज",
+      "emoji": "🍉"
+    },
+    "nmxsje": {
+      "type": "greeting",
+      "meaning": "namaste / hello",
+      "hindi": "नमस्ते"
+    },
+    "tmatr": {
+      "type": "noun",
+      "meaning": "tomato",
+      "hindi": "टमाटर"
+    },
+    "doktr": {
+      "type": "noun",
+      "meaning": "doctor",
+      "hindi": "डॉक्टर"
+    },
+    "doctor": {
+      "type": "noun",
+      "meaning": "doctor (english)",
+      "hindi": "डॉक्टर"
+    },
+    "vme": {
+      "type": "pronoun",
+      "meaning": "us / to us (humein)",
+      "hindi": "हमें"
+    },
+    "hme": {
+      "type": "pronoun",
+      "meaning": "us / to us (humein)",
+      "hindi": "हमें"
+    },
+    "vajhi": {
+      "type": "noun",
+      "meaning": "elephant",
+      "hindi": "हाथी",
+      "emoji": "🐘"
+    },
+    "hajhi": {
+      "type": "noun",
+      "meaning": "elephant",
+      "hindi": "हाथी",
+      "emoji": "🐘"
+    },
+    "hathi": {
+      "type": "noun",
+      "meaning": "elephant",
+      "hindi": "हाथी",
+      "emoji": "🐘"
+    },
+    "qwai": {
+      "type": "?",
+      "meaning": "?",
+      "hindi": "?"
+    },
+    "qeja": {
+      "type": "?",
+      "meaning": "?",
+      "hindi": "?"
+    },
+    "zhnda": {
+      "type": "noun",
+      "meaning": "flag (jhanda)",
+      "hindi": "झंडा"
+    },
+    "xnguur": {
+      "type": "noun",
+      "meaning": "grapes (angoor)",
+      "hindi": "अंगूर",
+      "emoji": "🍇"
+    },
+    "zhula": {
+      "type": "noun",
+      "meaning": "swing (jhula)",
+      "hindi": "झूला"
+    }
+  },
+  "codes": [
+    "xh26",
+    "xe26"
+  ],
+  "phonemes_file": "data/xnglo_phonemes.json"
 }
