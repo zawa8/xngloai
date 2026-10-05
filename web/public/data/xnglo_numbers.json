@@ -1,0 +1,24 @@
+{
+  "language": "xnglo",
+  "code": "xh26",
+  "version": "1.0",
+  "number_system": {
+    "base": 16,
+    "decimal_digits": "0 1 2 3 4 5 6 7 8 9",
+    "hex_digits": {
+      "0":0,"1":1,"2":2,"3":3,"4":4,"5":5,"6":6,"7":7,"8":8,"9":9,
+      "L":10,"Y":11,"V":12,"W":13,"P":14,"F":15
+    },
+    "full_hex_string": "0123456789LYVWPF",
+    "note": "xnglo decimal (0-9) aur hex (0-9 + lyvwpf) dono support karta hai."
+  },
+  "examples": {
+    "10_decimal = L": "L",
+    "11_decimal = Y": "Y",
+    "12_decimal = V": "V",
+    "13_decimal = W": "W",
+    "14_decimal = P": "P",
+    "15_decimal = F": "F",
+    "16_decimal = 10": "10"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "language": "xnglo",
+  "code": "xh26",
+  "version": "1.0",
+  "headers": ["base", "x", "a", "e", "i", "u", "o", "h"],
+  "vowels": ["x", "a", "e", "i", "u", "o", "h"],
+  "syllables": {
+    "x": ["x",  "",   "xa", "xe", "xi", "xu", "xo"],
+    "a": ["a",  "",   "aa", "ae", "ai", "ao"],
+    "e": ["e",  "",   "",   "ei", "eu", "eo"],
+    "i": ["i",  "xi", "ia", "ie", "ii", "iu", "io"],
+    "u": ["u",  "xu", "ua", "ue", "ui", "uu", "uo"],
+    "k": ["k",  "xk", "ka", "ke", "ki", "ku", "ko", "kh"],
+    "g": ["g",  "xg", "ga", "ge", "gi", "gu", "go", "gh"],
+    "c": ["c",  "xc", "ca", "ce", "ci", "cu", "co", "ch"],
+    "z": ["z",  "xz", "za", "ze", "zi", "zu", "zo", "zh"],
+    "t": ["t",  "xt", "ta", "te", "ti", "tu", "to", "th"],
+    "d": ["d",  "xd", "da", "de", "di", "du", "do", "dh"],
+    "j": ["j",  "xj", "ja", "je", "ji", "ju", "jo", "jh"],
+    "q": ["q",  "xq", "qa", "qe", "qi", "qu", "qo", "qh"],
+    "n": ["n",  "xn", "na", "ne", "ni", "nu", "no"],
+    "p": ["p",  "pa", "pe", "pi", "pu", "po", "ph"],
+    "b": ["b",  "ba", "be", "bi", "bu", "bo", "bh"],
+    "m": ["m",  "ma", "me", "mi", "mu", "mo"],
+    "y": ["y",  "ya", "ye", "yi", "yu", "yo"],
+    "r": ["r",  "ra", "re", "ri", "ru", "ro"],
+    "rr":["rr", "rra","rre","rri","rru","rro"],
+    "l": ["l",  "la", "le", "li", "lu", "lo"],
+    "ll":["ll", "lla","lle","llu","llo"],
+    "w": ["w",  "wa", "we", "wi", "wu", "wo"],
+    "v": ["v",  "va", "ve", "vi", "vu", "vo"],
+    "kh":["kh", "kha","khe","khi","khu","kho"]
+  },
+  "examples": {
+    "xnguur": "grapes (अंगूर) — preferred form",
+    "xfguur": "grapes — alternate (older form)",
+    "zhnda":  "flag (झंडा)",
+    "zhula":  "swing (झूला)"
+  },
+  "notes": [
+    "har consonant + vowel (x,a,e,i,u,o) + h-form",
+    "h-form = aspirated sound (kh, gh, ch, jh, th, dh, ph, bh)",
+    "x = default vowel (a ki jagah)"
+  ]
+}
