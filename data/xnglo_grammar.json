@@ -1,0 +1,47 @@
+{
+  "language": "xnglo",
+  "code": "xh26",
+  "version": "3.1",
+  "grammar": {
+    "lipi": {
+      "title": "lipi (script)",
+      "rule": "xnglo sirf a-z letters (26) se likhi jati hai. koi special character nahi.",
+      "alphabet": "abcdefghijklmnopqrstuvwxyz",
+      "count": 26,
+      "code_ka_matlab": "xh26 = xnglo hindi + 26 letters"
+    },
+    "sndkhyx": {
+      "title": "sandkhya (numbers)",
+      "decimal": "0-9",
+      "hex_extra": "L=10, Y=11, V=12, W=13, P=14, F=15",
+      "full_hex": "0123456789LYVWPF"
+    },
+    "shbd_kram": {
+      "title": "shabd kram (word order)",
+      "rule": "karta + karma + kriya (SOV)",
+      "example": {
+        "xnglo": "mxx xnglo boltx hxx",
+        "hindi": "मैं xnglo बोलता हूँ",
+        "english": "i speak xnglo"
+      }
+    },
+    "lxng": { "title": "ling (gender)", "types": ["pxrling","striling","npxunsak"] },
+    "vachan": {
+      "title": "vachan (number)",
+      "types": ["ekvachan","bxhvachan"],
+      "rule": "plural: + gxn",
+      "example": "shbdx → shbdxgxn"
+    },
+    "kal": {
+      "title": "kal (tense)",
+      "types": { "bhootkal": "past — + thx", "vrtman": "present — + tx", "bhavishy": "future — + gx" }
+    },
+    "srvnam": {
+      "title": "sarvnam (pronouns)",
+      "list": {
+        "mxx": "main (i)", "tum": "tum (you)", "vxx": "woh (he/she)",
+        "hxm": "hum (we)", "txm": "aap log (you all)", "vx": "woh log (they)"
+      }
+    }
+  }
+}

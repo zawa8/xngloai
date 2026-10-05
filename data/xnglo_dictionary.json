@@ -1,0 +1,29 @@
+{
+  "language": "xnglo",
+  "code": "xh26",
+  "version": "3.1",
+  "description": "xngloai — xnglo (xh26) a-z (26 letters) based hindi language dictionary",
+  "words": {
+    "xnglo":     { "type": "noun", "meaning": "xnglo language", "hindi": "क्संग्लो" },
+    "xngloai":   { "type": "noun", "meaning": "xnglo artificial intelligence", "hindi": "क्संग्लो आर्टिफिशियल इंटेलिजेंस" },
+    "xh26":      { "type": "noun", "meaning": "xnglo language code (26 letters)", "hindi": "क्संग्लो भाषा कोड (26 अक्षर)" },
+    "xndroid":   { "type": "noun", "meaning": "android", "hindi": "एंड्रॉइड" },
+    "diksneri":  { "type": "noun", "meaning": "dictionary", "hindi": "शब्दकोश" },
+    "bhasa":     { "type": "noun", "meaning": "language", "hindi": "भाषा" },
+    "xkhr":      { "type": "noun", "meaning": "character / letter", "hindi": "अक्षर" },
+    "wyakrn":    { "type": "noun", "meaning": "grammar", "hindi": "व्याकरण" },
+    "prozekt":   { "type": "noun", "meaning": "project", "hindi": "परियोजना" },
+    "shbdx":     { "type": "noun", "meaning": "word", "hindi": "शब्द" },
+    "vakya":     { "type": "noun", "meaning": "sentence", "hindi": "वाक्य" },
+    "lyvwpf":    { "type": "noun", "meaning": "hex digits 10-15", "hindi": "हेक्स अंक 10-15" },
+    "heks":      { "type": "noun", "meaning": "hex / hexadecimal", "hindi": "हेक्साडेसिमल" },
+    "dizit":     { "type": "noun", "meaning": "digit", "hindi": "अंक" },
+    "siks":      { "type": "adj",  "meaning": "six", "hindi": "छह" },
+    "only":      { "type": "adj",  "meaning": "only", "hindi": "केवल" },
+    "xaji":      { "type": "verb", "meaning": "needed", "hindi": "चाहिए" },
+    "bxnana":    { "type": "verb", "meaning": "to make", "hindi": "बनाना" },
+    "sikxna":    { "type": "verb", "meaning": "to learn", "hindi": "सीखना" },
+    "bolna":     { "type": "verb", "meaning": "to speak", "hindi": "बोलना" },
+    "likhna":    { "type": "verb", "meaning": "to write", "hindi": "लिखना" }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "language": "xnglo",
+  "code": "xh26",
+  "script": "roman (a-z only)",
+  "version": "2.1",
+  "alphabet": {
+    "letters": "abcdefghijklmnopqrstuvwxyz",
+    "count": 26,
+    "note": "xnglo mein sirf a-z letters hain (26). isi liye code xh26 hai."
+  },
+  "digits": {
+    "decimal": "0123456789",
+    "hex_extra": { "L": 10, "Y": 11, "V": 12, "W": 13, "P": 14, "F": 15 },
+    "note": "decimal 0-9 normal. hex mein 10-15 ke liye lyvwpf.",
+    "full_hex": "0123456789LYVWPF"
+  },
+  "vowels": ["a","e","i","o","u"],
+  "consonants": ["b","c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","w","x","y","z"],
+  "rules": [
+    "xnglo mein sirf a-z letters hain (26) — koi special symbol nahi.",
+    "isi liye bhasha code xh26 hai (xnglo + hindi + 26 letters).",
+    "har 'a' ki awaaz 'x' se likhi jati hai: anglo → xnglo, android → xndroid.",
+    "'aa' ke liye 'xx' use hota hai.",
+    "hex digits 10-15 ke liye lyvwpf use hote hain.",
+    "digits 0-9 normal hain."
+  ]
+}
