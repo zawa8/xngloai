@@ -25,23 +25,192 @@
         "english": "i speak xnglo"
       }
     },
-    "lxng": { "title": "ling (gender)", "types": ["pxrling","striling","npxunsak"] },
+    "lxng": {
+      "title": "ling (gender)",
+      "types": [
+        "pxrling",
+        "striling",
+        "npxunsak"
+      ]
+    },
     "vachan": {
       "title": "vachan (number)",
-      "types": ["ekvachan","bxhvachan"],
+      "types": [
+        "ekvachan",
+        "bxhvachan"
+      ],
       "rule": "plural: + gxn",
       "example": "shbdx → shbdxgxn"
     },
     "kal": {
       "title": "kal (tense)",
-      "types": { "bhootkal": "past — + thx", "vrtman": "present — + tx", "bhavishy": "future — + gx" }
+      "types": {
+        "bhootkal": "past — + thx",
+        "vrtman": "present — + tx",
+        "bhavishy": "future — + gx"
+      }
     },
     "srvnam": {
       "title": "sarvnam (pronouns)",
       "list": {
-        "mxx": "main (i)", "tum": "tum (you)", "vxx": "woh (he/she)",
-        "hxm": "hum (we)", "txm": "aap log (you all)", "vx": "woh log (they)"
+        "mxx": "main (i)",
+        "tum": "tum (you)",
+        "vxx": "woh (he/she)",
+        "hxm": "hum (we)",
+        "txm": "aap log (you all)",
+        "vx": "woh log (they)"
       }
+    },
+    "4_karxk": {
+      "title": "karxk (case) - 8 prakar",
+      "niym": "krja = karta (doer), krm = karma (object), xur sb rishta drshate h",
+      "prakar": {
+        "1_krja": "karta - ne cinh - kon? (doer)",
+        "2_krm": "karma - ko cinh - kya? (object)",
+        "3_krn": "karan - se cinh - kisse? (by means)",
+        "4_smprqan": "sampradan - ko / ke liye - kiske liye? (to/for)",
+        "5_xpaqan": "apadan - se cinh - kahan se? (from)",
+        "6_smbnqh": "sambandh - ka/ki/ke - kiska? (relation)",
+        "7_xqikrxn": "adhikaran - mẽ/par - kahan? (location)",
+        "8_smbodhn": "sambodhan - he/are - kise? (calling)"
+      },
+      "kriya_prakar": {
+        "skxrmk": "sakarmak - krja != krm (transitive) - ram ne pjr likha",
+        "xkxrmk": "akarmak - krja = krm (intransitive) - xam gira"
+      },
+      "eksampl": [
+        {
+          "id": 1,
+          "vakya": "ram ne razu ki klm se sija ke liye pjr likha",
+          "hindi": "राम ने रज़ू की कलम से सीता के लिए पत्र लिखा",
+          "kriya": "likha",
+          "kriya_prakar": "skxrmk",
+          "kriya_rezn": "krja (ram) != krm (pjr)",
+          "karxk_list": [
+            {
+              "shbdx": "ram ne",
+              "karxk": "krja",
+              "kuest": "kon likha?",
+              "ans": "ram ne"
+            },
+            {
+              "shbdx": "pjr",
+              "karxk": "krm",
+              "kuest": "kya likha?",
+              "ans": "pjr"
+            },
+            {
+              "shbdx": "klm se",
+              "karxk": "krn",
+              "kuest": "kisse likha?",
+              "ans": "klm se"
+            },
+            {
+              "shbdx": "razu ki klm",
+              "karxk": "smbnqh",
+              "kuest": "kiska klm?",
+              "ans": "razu ki"
+            },
+            {
+              "shbdx": "sija ke liye",
+              "karxk": "smprqan",
+              "kuest": "kiske liye likha?",
+              "ans": "sija ke liye"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "vakya": "perr se xam gira",
+          "hindi": "पेड़ से आम गिरा",
+          "kriya": "gira",
+          "kriya_prakar": "xkxrmk",
+          "kriya_rezn": "krja (xam) = krm (xam)",
+          "karxk_list": [
+            {
+              "shbdx": "xam",
+              "karxk": "krja",
+              "kuest": "kon gira?",
+              "ans": "xam"
+            },
+            {
+              "shbdx": "xam",
+              "karxk": "krm",
+              "kuest": "kya gira?",
+              "ans": "xam"
+            },
+            {
+              "shbdx": "perr se",
+              "karxk": "xpaqan",
+              "kuest": "kahan se gira?",
+              "ans": "perr se"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "vakya": "mxx ghxr mẽ hxx",
+          "hindi": "मैं घर में हूँ",
+          "kriya": "hxx",
+          "kriya_prakar": "xkxrmk",
+          "karxk_list": [
+            {
+              "shbdx": "mxx",
+              "karxk": "krja",
+              "kuest": "kon hxx?",
+              "ans": "mxx"
+            },
+            {
+              "shbdx": "ghxr mẽ",
+              "karxk": "xqikrxn",
+              "kuest": "kahan hxx?",
+              "ans": "ghxr mẽ"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "vakya": "mxxjhe pxni xaji hxx",
+          "hindi": "मुझे पानी चाहिए",
+          "kriya": "xaji hxx",
+          "kriya_prakar": "skxrmk",
+          "karxk_list": [
+            {
+              "shbdx": "mxxjhe",
+              "karxk": "krm",
+              "kuest": "kisko cahiye?",
+              "ans": "mxxjhe"
+            },
+            {
+              "shbdx": "pxni",
+              "karxk": "krja",
+              "kuest": "kya cahiye?",
+              "ans": "pxni"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "vakya": "he ram, suno",
+          "hindi": "हे राम, सुनो",
+          "kriya": "suno",
+          "kriya_prakar": "skxrmk",
+          "karxk_list": [
+            {
+              "shbdx": "he ram",
+              "karxk": "smbodhn",
+              "kuest": "kise bula rahe h?",
+              "ans": "he ram"
+            }
+          ]
+        }
+      ],
+      "xur_niym": [
+        "ne cinh sirf skxrmk + bhootkal mẽ",
+        "xkxrmk kriya mẽ krja = krm (donon ek hi h)",
+        "smbnqh do shbdx ke bic rishta (razu ki klm)",
+        "ek vakya mẽ ek se xur karxk ho skte h"
+      ]
     }
   }
 }

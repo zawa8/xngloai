@@ -1,0 +1,102 @@
+{
+  "language": "xnglo",
+  "code": "xh26",
+  "version": "1.0",
+  "title": "karxk (hindi case system in xnglo)",
+
+  "8_karxk": {
+    "1_krja":    {"cinh": "ne",       "kuest": "kon?",         "hindi": "कर्ता"},
+    "2_krm":     {"cinh": "ko",       "kuest": "kya?",         "hindi": "कर्म"},
+    "3_krn":     {"cinh": "se",       "kuest": "kisse?",       "hindi": "करण"},
+    "4_smprqan": {"cinh": "ko / liye","kuest": "kiske liye?",  "hindi": "सम्प्रदान"},
+    "5_xpaqan":  {"cinh": "se",       "kuest": "kahan se?",    "hindi": "अपादान"},
+    "6_smbnqh":  {"cinh": "ka/ki/ke", "kuest": "kiska?",       "hindi": "सम्बन्ध"},
+    "7_xqikrxn": {"cinh": "mẽ/par",   "kuest": "kahan?",       "hindi": "अधिकरण"},
+    "8_smbodhn": {"cinh": "he/are",   "kuest": "kise?",        "hindi": "सम्बोधन"}
+  },
+
+  "kriya_prakar": {
+    "skxrmk": {
+      "matlab": "sakarmak (transitive)",
+      "nishani": "krja != krm",
+      "eksampl": "ram ne pjr likha",
+      "rezn": "ram (krja) != pjr (krm)"
+    },
+    "xkxrmk": {
+      "matlab": "akarmak (intransitive)",
+      "nishani": "krja = krm",
+      "eksampl": "xam gira",
+      "rezn": "xam = xam (donon ek)"
+    }
+  },
+
+  "eksampl": [
+    {
+      "id": 1,
+      "xnglo": "ram ne razu ki klm se sija ke liye pjr likha",
+      "hindi": "राम ने रज़ू की कलम से सीता के लिए पत्र लिखा",
+      "iNgliS": "ram wrote a letter for sita with razu's pen",
+      "kriya": "likha (likhnai)",
+      "prakar": "skxrmk",
+      "karxk": [
+        {"k": "ram ne",       "karxk": "krja",    "kuest": "kon likha?"},
+        {"k": "pjr",          "karxk": "krm",     "kuest": "kya likha?"},
+        {"k": "klm se",       "karxk": "krn",     "kuest": "kisse likha?"},
+        {"k": "razu ki klm",  "karxk": "smbnqh",  "kuest": "kiska klm?"},
+        {"k": "sija ke liye", "karxk": "smprqan", "kuest": "kiske liye?"}
+      ]
+    },
+    {
+      "id": 2,
+      "xnglo": "perr se xam gira",
+      "hindi": "पेड़ से आम गिरा",
+      "iNgliS": "mango fell from tree",
+      "kriya": "gira (girna)",
+      "prakar": "xkxrmk",
+      "karxk": [
+        {"k": "xam",     "karxk": "krja",   "kuest": "kon gira?"},
+        {"k": "xam",     "karxk": "krm",    "kuest": "kya gira?"},
+        {"k": "perr se", "karxk": "xpaqan", "kuest": "kahan se gira?"}
+      ]
+    },
+    {
+      "id": 3,
+      "xnglo": "mxx ghxr mẽ hxx",
+      "hindi": "मैं घर में हूँ",
+      "kriya": "hxx",
+      "prakar": "xkxrmk",
+      "karxk": [
+        {"k": "mxx",     "karxk": "krja",     "kuest": "kon?"},
+        {"k": "ghxr mẽ","karxk": "xqikrxn",  "kuest": "kahan?"}
+      ]
+    },
+    {
+      "id": 4,
+      "xnglo": "mxxjhe pxni xaji hxx",
+      "hindi": "मुझे पानी चाहिए",
+      "kriya": "xaji hxx",
+      "prakar": "skxrmk",
+      "karxk": [
+        {"k": "mxxjhe", "karxk": "krm",  "kuest": "kisko cahiye?"},
+        {"k": "pxni",   "karxk": "krja", "kuest": "kya cahiye?"}
+      ]
+    },
+    {
+      "id": 5,
+      "xnglo": "he ram, suno",
+      "hindi": "हे राम, सुनो",
+      "kriya": "suno",
+      "prakar": "skxrmk",
+      "karxk": [
+        {"k": "he ram", "karxk": "smbodhn", "kuest": "kise bula rahe h?"}
+      ]
+    }
+  ],
+
+  "xur_niym": [
+    "ne cinh sirf skxrmk + bhootkal mẽ",
+    "xkxrmk kriya mẽ krja = krm",
+    "smbnqh do shbdx ke bic rishta",
+    "ek vakya mẽ kai karxk ho skte h"
+  ]
+}
