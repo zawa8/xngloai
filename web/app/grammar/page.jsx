@@ -1,6 +1,5 @@
 import fs from "fs";
 import path from "path";
-import { S } from "@/lib/strings";
 
 function loadGrammar() {
   const p = path.join(process.cwd(), "public", "data", "xnglo_grammar.json");
@@ -12,13 +11,13 @@ export default function GrammarPage() {
   const g = data.grammar;
   return (
     <main style={{ padding: "2rem", maxWidth: "900px", margin: "0 auto" }}>
-      <h1>{S.gramr_taitl}</h1>
-      <p style={{ opacity: 0.6 }}>{S.gramr_sbtaitl} ({data.code})</p>
+      <h1>grammar / wyakrn</h1>
+      <p style={{ opacity: 0.6 }}>bhasha ke niyam ({data.code})</p>
       {Object.entries(g).map(([key, section]) => (
         <section key={key} style={{ marginTop: "2rem", padding: "1.5rem", border: "1px solid #222", borderRadius: "8px" }}>
           <h2 style={{ marginTop: 0, color: "#7dd3fc" }}>{section.title}</h2>
           {section.rule && <p>{section.rule}</p>}
-          {section.count && <p>{S.gramr_kaunt}: {section.count}</p>}
+          {section.count && <p>kaunt: {section.count}</p>}
           {section.alphabet && <p style={{ fontFamily: "monospace" }}>{section.alphabet}</p>}
           {section.example && (
             <div style={{ background: "#111", padding: "1rem", borderRadius: "6px", marginTop: "0.5rem" }}>

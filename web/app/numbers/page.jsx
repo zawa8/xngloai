@@ -1,6 +1,5 @@
 "use client";
 import { useState, useEffect } from "react";
-import { S } from "@/lib/strings";
 
 export default function NumbersPage() {
   const [nums, setNums] = useState(null);
@@ -9,12 +8,12 @@ export default function NumbersPage() {
     fetch("/data/xnglo_numbers.json").then(r => r.json()).then(setNums);
     fetch("/data/xnglo_months.json").then(r => r.json()).then(setMonths);
   }, []);
-  if (!nums || !months) return <main style={{ padding: "2rem" }}>{S.num_loding}</main>;
+  if (!nums || !months) return <main style={{ padding: "2rem" }}>loding...</main>;
   return (
     <main style={{ padding: "2rem", maxWidth: "900px", margin: "0 auto" }}>
-      <h1>{S.num_taitl}</h1>
-      <p style={{ opacity: 0.6 }}>{S.num_heks}: {nums.hex_symbols}</p>
-      <h2 style={{ marginTop: "2rem" }}>{S.num_wrdz}</h2>
+      <h1>numbers / sandkhya</h1>
+      <p style={{ opacity: 0.6 }}>xnglo heks: {nums.hex_symbols}</p>
+      <h2 style={{ marginTop: "2rem" }}>1-15 wrdz</h2>
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))", gap: "0.75rem" }}>
         {Object.entries(nums.words).map(([w, v]) => (
           <div key={w} style={{ padding: "1rem", border: "1px solid #222", borderRadius: "6px", background: "#0f0f0f" }}>
@@ -24,15 +23,15 @@ export default function NumbersPage() {
           </div>
         ))}
       </div>
-      <h2 style={{ marginTop: "2rem" }}>{S.num_mxnth}</h2>
+      <h2 style={{ marginTop: "2rem" }}>mxnth / mahine</h2>
       <table style={{ width: "100%", borderCollapse: "collapse", marginTop: "0.5rem" }}>
         <thead>
           <tr style={{ borderBottom: "1px solid #333" }}>
-            <th style={{ textAlign: "left", padding: "0.5rem" }}>{S.num_th.n}</th>
-            <th style={{ textAlign: "left", padding: "0.5rem" }}>{S.num_th.xnglo}</th>
-            <th style={{ textAlign: "left", padding: "0.5rem" }}>{S.num_th.iNgliS}</th>
-            <th style={{ textAlign: "left", padding: "0.5rem" }}>{S.num_th.kin}</th>
-            <th style={{ textAlign: "left", padding: "0.5rem" }}>{S.num_th.diz}</th>
+            <th style={{ textAlign: "left", padding: "0.5rem" }}>#</th>
+            <th style={{ textAlign: "left", padding: "0.5rem" }}>xnglo</th>
+            <th style={{ textAlign: "left", padding: "0.5rem" }}>iNgliS</th>
+            <th style={{ textAlign: "left", padding: "0.5rem" }}>kin (heks)</th>
+            <th style={{ textAlign: "left", padding: "0.5rem" }}>diz</th>
           </tr>
         </thead>
         <tbody>

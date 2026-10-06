@@ -1,6 +1,5 @@
 import fs from "fs";
 import path from "path";
-import { S } from "@/lib/strings";
 
 function loadPhonemes() {
   const p = path.join(process.cwd(), "public", "data", "xnglo_phonemes.json");
@@ -12,13 +11,13 @@ export default function PhonemesPage() {
   const syl = data.syllables;
   return (
     <main style={{ padding: "2rem", maxWidth: "1100px", margin: "0 auto" }}>
-      <h1>{S.fon_taitl}</h1>
-      <p style={{ opacity: 0.6 }}>{Object.keys(syl).length} {S.fon_sbtaitl}</p>
+      <h1>phonemes / swr + wynzn</h1>
+      <p style={{ opacity: 0.6 }}>{Object.keys(syl).length} konsonants x 6 vauelz = silabl chart</p>
       <div style={{ overflowX: "auto", marginTop: "1.5rem" }}>
         <table style={{ width: "100%", borderCollapse: "collapse", fontFamily: "monospace" }}>
           <thead>
             <tr style={{ borderBottom: "1px solid #333" }}>
-              <th style={{ textAlign: "left", padding: "0.5rem" }}>base</th>
+              <th style={{ textAlign: "left", padding: "0.5rem" }}>bes</th>
               <th style={{ textAlign: "left", padding: "0.5rem" }}>x</th>
               <th style={{ textAlign: "left", padding: "0.5rem" }}>a</th>
               <th style={{ textAlign: "left", padding: "0.5rem" }}>e</th>
@@ -40,7 +39,7 @@ export default function PhonemesPage() {
       </div>
       {data.examples && (
         <section style={{ marginTop: "2rem" }}>
-          <h2>{S.fon_xampl}</h2>
+          <h2>xamplz</h2>
           <ul>
             {Object.entries(data.examples).map(([k, v]) => (
               <li key={k}><code>{k}</code> = {v}</li>

@@ -1,12 +1,11 @@
 "use client";
 import { useState, useEffect } from "react";
-import { S } from "@/lib/strings";
 
 export default function DictionaryPage() {
   const [dict, setDict] = useState(null);
   const [q, setQ] = useState("");
   useEffect(() => { fetch("/data/xnglo_dictionary.json").then(r => r.json()).then(setDict); }, []);
-  if (!dict) return <main style={{ padding: "2rem" }}>{S.diks_loding}</main>;
+  if (!dict) return <main style={{ padding: "2rem" }}>loding...</main>;
   const words = Object.entries(dict.words || {});
   const filtered = q ? words.filter(([w, v]) =>
     w.toLowerCase().includes(q.toLowerCase()) ||
@@ -14,9 +13,9 @@ export default function DictionaryPage() {
     (v.hindi && v.hindi.includes(q))) : words;
   return (
     <main style={{ padding: "2rem", maxWidth: "900px", margin: "0 auto" }}>
-      <h1>{S.diks_taitl}</h1>
-      <p style={{ opacity: 0.6 }}>{S.diks_sbtaitl}: {words.length} | code: {dict.code}</p>
-      <input type="text" placeholder={S.diks_sarch} value={q} onChange={e => setQ(e.target.value)}
+      <h1>dictionary / diksneri</h1>
+      <p style={{ opacity: 0.6 }}>total: {words.length} | kod: {dict.code}</p>
+      <input type="text" placeholder="sarch xnglo / iNgliS / hindi..." value={q} onChange={e => setQ(e.target.value)}
         style={{ width: "100%", padding: "0.75rem", marginTop: "1rem", background: "#111", border: "1px solid #333", borderRadius: "6px", color: "#fff", fontSize: "1rem" }} />
       <div style={{ marginTop: "1.5rem", display: "grid", gap: "0.75rem" }}>
         {filtered.map(([w, v]) => (

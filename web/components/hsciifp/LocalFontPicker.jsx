@@ -1,5 +1,4 @@
 'use client';
-
 import { useEffect, useState } from 'react';
 
 const LOCAL_FONTS = [
@@ -22,44 +21,36 @@ export default function LocalFontPicker() {
   const [selectedFont, setSelectedFont] = useState(DEFAULT_FONT);
 
   useEffect(() => {
-    const savedFont = localStorage.getItem('user-local-font');
-    const fontToApply = savedFont || DEFAULT_FONT;
-    setSelectedFont(fontToApply);
-    applyGlobalFont(fontToApply);
+    const saved = localStorage.getItem('user-local-font');
+    const f = saved || DEFAULT_FONT;
+    setSelectedFont(f);
+    applyFont(f);
   }, []);
 
-  const handleFontChange = (fontId) => {
-    setSelectedFont(fontId);
-    localStorage.setItem('user-local-font', fontId);
-    applyGlobalFont(fontId);
-  };
-
-  const applyGlobalFont = (fontId) => {
-    const fontObj = LOCAL_FONTS.find((f) => f.id === fontId);
-    if (fontObj) {
-      document.documentElement.style.setProperty('--current-active-font', fontObj.variable);
-      document.body.style.fontFamily = fontObj.variable;
+  const applyFont = (fontId) => {
+    const obj = LOCAL_FONTS.find(f => f.id === fontId);
+    if (obj) {
+      document.documentElement.style.setProperty('--current-active-font', obj.variable);
+      document.body.style.fontFamily = obj.variable;
     }
   };
 
+  const handleChange = (fontId) => {
+    setSelectedFont(fontId);
+    localStorage.setItem('user-local-font', fontId);
+    applyFont(fontId);
+  };
+
   return (
-    <select
-      value={selectedFont}
-      onChange={(e) => handleFontChange(e.target.value)}
+    <select value={selectedFont} onChange={e => handleChange(e.target.value)}
+      title="font change karein"
       style={{
-        padding: '0.4rem 0.6rem',
-        borderRadius: '6px',
-        border: '1px solid #333',
-        background: '#111',
-        color: '#fff',
-        fontSize: '0.85rem',
-        cursor: 'pointer',
-      }}
-    >
-      {LOCAL_FONTS.map((font) => (
-        <option key={font.id} value={font.id}>
-          {font.name}
-        </option>
+        padding: '0.4rem 0.6rem', borderRadius: '6px',
+        border: '1px solid #333', background: '#111',
+        color: '#fff', fontSize: '0.85rem', cursor: 'pointer',
+      }}>
+      {LOCAL_FONTS.map(f => (
+        <option key={f.id} value={f.id}>{f.name}</option>
       ))}
     </select>
   );

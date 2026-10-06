@@ -5,11 +5,11 @@ import {
 } from "@/components/hsciifp/varfonts";
 import LocalFontPicker from "@/components/hsciifp/LocalFontPicker";
 import MicButton from "@/components/hsciifp/MicButton";
-import { S } from "@/lib/strings";
+import BekBatan from "@/components/BekBatan";
 
 export const metadata = {
-  title: `${S.ap_nam} - ${S.ap_taglain}`,
-  description: `${S.ap_bhasa} ka AI assistant`,
+  title: "xngloai - xnglo artifisiyl intelizens",
+  description: "xh26 bhasha ka AI assistant",
 };
 
 export default function RootLayout({ children }) {
@@ -27,16 +27,17 @@ export default function RootLayout({ children }) {
         background: "#0a0a0a", color: "#fff", minHeight: "100vh"
       }}>
         <nav style={{
-          display: "flex", gap: "1.5rem", padding: "1rem 2rem",
+          display: "flex", gap: "1rem", padding: "1rem 2rem",
           borderBottom: "1px solid #222", alignItems: "center", flexWrap: "wrap"
         }}>
+          <BekBatan />
           <Link href="/" style={{ color: "#fff", fontWeight: 700, fontSize: "1.2rem", textDecoration: "none" }}>
-            {S.nxw_hom}
+            xngloai
           </Link>
-          <Link href="/grammar"    style={{ color: "#aaa", textDecoration: "none" }}>{S.nxw_gramr}</Link>
-          <Link href="/dictionary" style={{ color: "#aaa", textDecoration: "none" }}>{S.nxw_diks}</Link>
-          <Link href="/numbers"    style={{ color: "#aaa", textDecoration: "none" }}>{S.nxw_num}</Link>
-          <Link href="/phonemes"   style={{ color: "#aaa", textDecoration: "none" }}>{S.nxw_fon}</Link>
+          <Link href="/grammar"    style={{ color: "#aaa", textDecoration: "none" }}>grammar</Link>
+          <Link href="/dictionary" style={{ color: "#aaa", textDecoration: "none" }}>dictionary</Link>
+          <Link href="/numbers"    style={{ color: "#aaa", textDecoration: "none" }}>numbers</Link>
+          <Link href="/phonemes"   style={{ color: "#aaa", textDecoration: "none" }}>phonemes</Link>
 
           <div style={{ marginLeft: "auto", display: "flex", gap: "0.75rem", alignItems: "center" }}>
             <LocalFontPicker />
