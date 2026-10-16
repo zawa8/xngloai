@@ -41,6 +41,7 @@ export default function RootLayout({ children }) {
             <Link href="/dictionary" style={{ color: "#aaa", textDecoration: "none" }}>dictionary</Link>
             <Link href="/numbers"    style={{ color: "#aaa", textDecoration: "none" }}>numbers</Link>
             <Link href="/phonemes"   style={{ color: "#aaa", textDecoration: "none" }}>phonemes</Link>
+            <Link href="/chat"       style={{ color: "#7dd3fc", textDecoration: "none", fontWeight: 600 }}>chat</Link>
 
             <div style={{ marginLeft: "auto", display: "flex", gap: "0.75rem", alignItems: "center" }}>
               <LocalFontPicker />
