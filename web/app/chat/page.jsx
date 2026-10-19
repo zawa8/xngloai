@@ -3,9 +3,11 @@
 import { useState, useRef, useEffect } from "react";
 import { useSession } from "next-auth/react";
 import Link from "next/link";
+import { useLanguage } from "@/lib/LanguageContext";
 
 export default function ChatPage() {
   const { data: session, status } = useSession();
+  const { lang } = useLanguage();
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
@@ -30,6 +32,7 @@ export default function ChatPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           message: text,
+          lang,
           history: messages.map(m => ({ role: m.role, text: m.text })),
         }),
       });
@@ -75,6 +78,9 @@ export default function ChatPage() {
       fontFamily: "inherit",
     }}>
       <h1 style={{ marginTop: 0 }}>xngloai chat</h1>
+      <p style={{ opacity: 0.5, fontSize: "0.8rem", marginTop: 0 }}>
+        bhasha: {lang} — <Link href="/settings" style={{ color: "#7dd3fc" }}>chenj karo</Link>
+      </p>
 
       <div style={{
         flex: 1,

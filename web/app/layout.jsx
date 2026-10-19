@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { SessionProvider } from "next-auth/react";
+import { LanguageProvider } from "@/lib/LanguageContext";
 import {
   xh38ascfont, xb38ascfont, xe38ascfont, xg38ascfont, xj38ascfont,
   xk38ascfont, xm38ascfont, xo38ascfont, xp38ascfont, xs38ascfont, xt38ascfont,
 } from "@/components/hsciifp/varfonts";
 import LocalFontPicker from "@/components/hsciifp/LocalFontPicker";
+import LanguagePicker from "@/components/LanguagePicker";
 import MicButton from "@/components/hsciifp/MicButton";
 import BekBatan from "@/components/BekBatan";
 import AuthButton from "@/components/AuthButton";
@@ -29,27 +31,31 @@ export default function RootLayout({ children }) {
         background: "#0a0a0a", color: "#fff", minHeight: "100vh"
       }}>
         <SessionProvider>
-          <nav style={{
-            display: "flex", gap: "1rem", padding: "1rem 2rem",
-            borderBottom: "1px solid #222", alignItems: "center", flexWrap: "wrap"
-          }}>
-            <BekBatan />
-            <Link href="/" style={{ color: "#fff", fontWeight: 700, fontSize: "1.2rem", textDecoration: "none" }}>
-              xngloai
-            </Link>
-            <Link href="/grammar"    style={{ color: "#aaa", textDecoration: "none" }}>grammar</Link>
-            <Link href="/dictionary" style={{ color: "#aaa", textDecoration: "none" }}>dictionary</Link>
-            <Link href="/numbers"    style={{ color: "#aaa", textDecoration: "none" }}>numbers</Link>
-            <Link href="/phonemes"   style={{ color: "#aaa", textDecoration: "none" }}>phonemes</Link>
-            <Link href="/chat"       style={{ color: "#7dd3fc", textDecoration: "none", fontWeight: 600 }}>chat</Link>
+          <LanguageProvider>
+            <nav style={{
+              display: "flex", gap: "1rem", padding: "1rem 2rem",
+              borderBottom: "1px solid #222", alignItems: "center", flexWrap: "wrap"
+            }}>
+              <BekBatan />
+              <Link href="/" style={{ color: "#fff", fontWeight: 700, fontSize: "1.2rem", textDecoration: "none" }}>
+                xngloai
+              </Link>
+              <Link href="/grammar"    style={{ color: "#aaa", textDecoration: "none" }}>grammar</Link>
+              <Link href="/dictionary" style={{ color: "#aaa", textDecoration: "none" }}>dictionary</Link>
+              <Link href="/numbers"    style={{ color: "#aaa", textDecoration: "none" }}>numbers</Link>
+              <Link href="/phonemes"   style={{ color: "#aaa", textDecoration: "none" }}>phonemes</Link>
+              <Link href="/chat"       style={{ color: "#7dd3fc", textDecoration: "none", fontWeight: 600 }}>chat</Link>
+              <Link href="/settings"   style={{ color: "#aaa", textDecoration: "none" }}>settings</Link>
 
-            <div style={{ marginLeft: "auto", display: "flex", gap: "0.75rem", alignItems: "center" }}>
-              <LocalFontPicker />
-              <MicButton />
-              <AuthButton />
-            </div>
-          </nav>
-          {children}
+              <div style={{ marginLeft: "auto", display: "flex", gap: "0.75rem", alignItems: "center", flexWrap: "wrap" }}>
+                <LanguagePicker />
+                <LocalFontPicker />
+                <MicButton />
+                <AuthButton />
+              </div>
+            </nav>
+            {children}
+          </LanguageProvider>
         </SessionProvider>
       </body>
     </html>
